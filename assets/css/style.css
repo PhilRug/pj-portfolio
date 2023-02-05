@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --lightblue: rgba(103, 170, 212, 0.836);
+    --white: white;
+}
 
 .main-header {
     display: flex;
@@ -11,12 +15,12 @@
     align-items: center;
     padding: 1%;
     background-color: rgba(68, 71, 71, 0.863);
-    color: white;
+    color: var(--white);
 }
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     min-width: 300px;
     list-style-type: none;
     font-weight: bold;
@@ -25,28 +29,30 @@ nav ul {
 .container {
     position: relative;
     text-align: center;
-    color: white;
+    color: var(--white)e;
 }
 
 .bottom-right {
     position: absolute;
+    background-color: var(--lightblue);
     bottom: 8px;
     right: 16px;
   }
 .bottom-left {
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    bottom: 40px;
+    left: 0;
+    background-color: var(--lightblue);
   }
 .float-container {
     display: flex;
-    border: 3px solid #ffffff;
+    border: 3px solid var(--white);
     
 }
 
 .float-body {
     display: flex;
-    border: 3px solid #ffffff;
+    border: 3px solid var(--white);
     width: 100%;
 }
 
@@ -60,15 +66,15 @@ nav ul {
     float: left;
     padding: 20px;
     font-size: 100% bolder;
-    border: rgb(255, 255, 255) 3px solid;
+    border: var(--white) 3px solid;
     height: 33%;
-    flex-shrink: ;
 }
 
 .float-text {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
-    width: 50%;
+    width: 80%;
     float: left;
     padding: 20px;
     border-left: solid 5px;
@@ -77,8 +83,24 @@ nav ul {
 
 .card {
     display: flex;
+    position: relative;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    border: 25px rgb(230, 73, 16);
-    margin: 20px;
+    border: 10px var(--lightblue) solid;
+    margin: 5px;
+    color: var(--white);
+    font-size: large;
+}
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px 
+    var(--lightblue), 
+    0 0 15px 
+    var(--lightblue);
 }
