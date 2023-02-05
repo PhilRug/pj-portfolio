@@ -104,3 +104,11 @@ nav ul {
     0 0 15px 
     var(--lightblue);
 }
+
+@media screen and (max-width: 768px) {
+    
+    .main-header,
+    nav {
+      flex-direction: column;
+    }
+  }
