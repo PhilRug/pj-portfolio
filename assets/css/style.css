@@ -24,6 +24,7 @@ nav ul {
     min-width: 300px;
     list-style-type: none;
     font-weight: bold;
+    color: var(--lightblue)
 }
 
 .container {
@@ -38,12 +39,14 @@ nav ul {
     bottom: 8px;
     right: 16px;
   }
+
 .bottom-left {
     position: absolute;
     bottom: 40px;
     left: 0;
     background-color: var(--lightblue);
   }
+
 .float-container {
     display: flex;
     border: 3px solid var(--white);
@@ -92,6 +95,7 @@ nav ul {
     color: var(--white);
     font-size: large;
 }
+
 .code-card .card-header {
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
